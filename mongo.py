@@ -26,6 +26,8 @@ new_docs = [{'first':'terry', 'last':'pratchett', 'dob':'28/04/1948',
             
 coll.insert_many(new_docs)
 
+coll.remove({'first':'douglas'})
+
 documents = coll.find()
 
 for doc in documents:
