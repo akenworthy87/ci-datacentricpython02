@@ -28,6 +28,8 @@ coll.insert_many(new_docs)
 
 coll.remove({'first':'douglas'})
 
+coll.update_one({'nationality':'american'}, {'$set':{'hair_colour':'maroon'}})
+
 documents = coll.find()
 
 for doc in documents:
